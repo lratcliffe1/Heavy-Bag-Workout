@@ -7,18 +7,37 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		151EF84727883E24000BFAEF /* AVPlayer+Ding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 151EF84627883E24000BFAEF /* AVPlayer+Ding.swift */; };
+		151EF84A27883FFC000BFAEF /* ding.wav in Resources */ = {isa = PBXBuildFile; fileRef = 151EF84927883FFB000BFAEF /* ding.wav */; };
 		15A0F6D4278472DD000F8022 /* WorkoutApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15A0F6D3278472DD000F8022 /* WorkoutApp.swift */; };
-		15A0F6D6278472DD000F8022 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15A0F6D5278472DD000F8022 /* ContentView.swift */; };
+		15A0F6D6278472DD000F8022 /* WorkoutsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15A0F6D5278472DD000F8022 /* WorkoutsView.swift */; };
 		15A0F6D8278472E1000F8022 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 15A0F6D7278472E1000F8022 /* Assets.xcassets */; };
 		15A0F6DB278472E1000F8022 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 15A0F6DA278472E1000F8022 /* Preview Assets.xcassets */; };
+		15A0F6E3278473CB000F8022 /* Workout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15A0F6E2278473CB000F8022 /* Workout.swift */; };
+		15A0F6E5278475DB000F8022 /* WorkoutStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15A0F6E4278475DB000F8022 /* WorkoutStore.swift */; };
+		15A0F6E82784788B000F8022 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15A0F6E72784788B000F8022 /* CardView.swift */; };
+		15A0F6EA27847B44000F8022 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15A0F6E927847B44000F8022 /* DetailView.swift */; };
+		15A0F6EC27847DAD000F8022 /* DetailEditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15A0F6EB27847DAD000F8022 /* DetailEditView.swift */; };
+		15A0F6EE27848CD0000F8022 /* WorkoutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15A0F6ED27848CCF000F8022 /* WorkoutView.swift */; };
+		15A0F6F027848F52000F8022 /* WorkoutTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15A0F6EF27848F52000F8022 /* WorkoutTimer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		151EF84627883E24000BFAEF /* AVPlayer+Ding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AVPlayer+Ding.swift"; sourceTree = "<group>"; };
+		151EF84927883FFB000BFAEF /* ding.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = ding.wav; sourceTree = "<group>"; };
+		157BC259278CEB0E002BF309 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		15A0F6D0278472DD000F8022 /* Workout.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Workout.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		15A0F6D3278472DD000F8022 /* WorkoutApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutApp.swift; sourceTree = "<group>"; };
-		15A0F6D5278472DD000F8022 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		15A0F6D5278472DD000F8022 /* WorkoutsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutsView.swift; sourceTree = "<group>"; };
 		15A0F6D7278472E1000F8022 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		15A0F6DA278472E1000F8022 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		15A0F6E2278473CB000F8022 /* Workout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Workout.swift; sourceTree = "<group>"; };
+		15A0F6E4278475DB000F8022 /* WorkoutStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutStore.swift; sourceTree = "<group>"; };
+		15A0F6E72784788B000F8022 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		15A0F6E927847B44000F8022 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		15A0F6EB27847DAD000F8022 /* DetailEditView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailEditView.swift; sourceTree = "<group>"; };
+		15A0F6ED27848CCF000F8022 /* WorkoutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutView.swift; sourceTree = "<group>"; };
+		15A0F6EF27848F52000F8022 /* WorkoutTimer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutTimer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,6 +51,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		151EF84827883F6D000BFAEF /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				151EF84927883FFB000BFAEF /* ding.wav */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		15A0F6C7278472DD000F8022 = {
 			isa = PBXGroup;
 			children = (
@@ -51,8 +78,11 @@
 		15A0F6D2278472DD000F8022 /* Workout */ = {
 			isa = PBXGroup;
 			children = (
+				157BC259278CEB0E002BF309 /* Info.plist */,
+				151EF84827883F6D000BFAEF /* Resources */,
+				15A0F6E1278473B9000F8022 /* Modals */,
+				15A0F6E627847878000F8022 /* Views */,
 				15A0F6D3278472DD000F8022 /* WorkoutApp.swift */,
-				15A0F6D5278472DD000F8022 /* ContentView.swift */,
 				15A0F6D7278472E1000F8022 /* Assets.xcassets */,
 				15A0F6D9278472E1000F8022 /* Preview Content */,
 			);
@@ -65,6 +95,29 @@
 				15A0F6DA278472E1000F8022 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		15A0F6E1278473B9000F8022 /* Modals */ = {
+			isa = PBXGroup;
+			children = (
+				15A0F6E2278473CB000F8022 /* Workout.swift */,
+				15A0F6E4278475DB000F8022 /* WorkoutStore.swift */,
+				15A0F6EF27848F52000F8022 /* WorkoutTimer.swift */,
+				151EF84627883E24000BFAEF /* AVPlayer+Ding.swift */,
+			);
+			path = Modals;
+			sourceTree = "<group>";
+		};
+		15A0F6E627847878000F8022 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				15A0F6E72784788B000F8022 /* CardView.swift */,
+				15A0F6E927847B44000F8022 /* DetailView.swift */,
+				15A0F6EB27847DAD000F8022 /* DetailEditView.swift */,
+				15A0F6ED27848CCF000F8022 /* WorkoutView.swift */,
+				15A0F6D5278472DD000F8022 /* WorkoutsView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,6 +178,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				151EF84A27883FFC000BFAEF /* ding.wav in Resources */,
 				15A0F6DB278472E1000F8022 /* Preview Assets.xcassets in Resources */,
 				15A0F6D8278472E1000F8022 /* Assets.xcassets in Resources */,
 			);
@@ -137,8 +191,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				15A0F6D6278472DD000F8022 /* ContentView.swift in Sources */,
+				15A0F6F027848F52000F8022 /* WorkoutTimer.swift in Sources */,
+				15A0F6D6278472DD000F8022 /* WorkoutsView.swift in Sources */,
+				15A0F6EA27847B44000F8022 /* DetailView.swift in Sources */,
+				15A0F6EC27847DAD000F8022 /* DetailEditView.swift in Sources */,
+				15A0F6E5278475DB000F8022 /* WorkoutStore.swift in Sources */,
+				15A0F6EE27848CD0000F8022 /* WorkoutView.swift in Sources */,
 				15A0F6D4278472DD000F8022 /* WorkoutApp.swift in Sources */,
+				15A0F6E3278473CB000F8022 /* Workout.swift in Sources */,
+				15A0F6E82784788B000F8022 /* CardView.swift in Sources */,
+				151EF84727883E24000BFAEF /* AVPlayer+Ding.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -272,11 +334,14 @@
 				DEVELOPMENT_TEAM = 3ZFCG7AH4U;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Workout/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -301,11 +366,14 @@
 				DEVELOPMENT_TEAM = 3ZFCG7AH4U;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Workout/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
