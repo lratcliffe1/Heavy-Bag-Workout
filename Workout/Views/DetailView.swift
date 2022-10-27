@@ -12,6 +12,7 @@ struct DetailView: View {
     
     @State private var data = Workout.Data()
     @State private var isPresentingEditView = false
+    @State private var isPresentingConfirm = false
     
     var body: some View {
         List {
@@ -59,7 +60,7 @@ struct DetailView: View {
             }
             Section(header: Text("")) {
                 Button(action: {
-                    workout.delete()
+                    isPresentingConfirm = true
                 }) {
                     Text("Delete Workout").frame(maxWidth: .infinity, alignment: .center)
                 }
@@ -90,6 +91,13 @@ struct DetailView: View {
                         }
                     }
             }
+        }
+        .confirmationDialog("Are you sure?", isPresented: $isPresentingConfirm) {
+            Button("Delete this workout?", role: .destructive) {
+                workout.delete()
+            }
+        } message: {
+            Text("You cannot undo this action")
         }
     }
 }

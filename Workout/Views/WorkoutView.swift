@@ -18,13 +18,14 @@ struct WorkoutView: View {
         if minsCalc == 10 {
             return "10:00"
         }
-        let mins = "0\(minsCalc > 0 ? minsCalc : 0)"
+        let mins = minsCalc > 10 ? "\(minsCalc)" : "0\(minsCalc > 0 ? minsCalc : 0)"
         let secs = "\(secsCalc > 9 ? "\(secsCalc)" : "0" + "\(secsCalc)")"
         return mins + ":" + secs
     }
     
     var body: some View {
         VStack {
+            WorkoutControls(workoutTimer: workoutTimer)
             Circle()
                 .strokeBorder(lineWidth: 32)
                 .overlay {
@@ -39,7 +40,7 @@ struct WorkoutView: View {
                                 .font(.title)
                                 .padding()
                             Text(secondsToMinutesSeconds(workoutTimer.secondsRemaining))
-                                .font(.largeTitle)
+                                .font(.system(size: 48))
                                 .padding()
                         }
                     }
@@ -51,14 +52,17 @@ struct WorkoutView: View {
                         .rotation(.degrees(-90))
                         .stroke(Color(UIColor.systemBackground) ,style: StrokeStyle(lineWidth: 12, lineCap: .round))
                         .padding()
+                        .animation(.linear(duration: workoutTimer.secondsElapsed == 0 || workoutTimer.secondsRemaining == 0 ? 0 : 1), value: workoutTimer.secondsElapsed)
                 }
                 .padding(.horizontal)
 
             Text(workoutTimer.round)
                 .font(.title)
-            Text("")            
-            ProgressView(value: workoutTimer.workoutComplete ? 1.0 : Double(workoutTimer.totalSecondsElapsed) / (Double(workoutTimer.totalSecondsRemaining) + Double(workoutTimer.totalSecondsElapsed)))
-                .padding()
+            VStack(alignment: .trailing, spacing: 10) {
+                Text(secondsToMinutesSeconds(workoutTimer.totalSecondsRemaining))
+                ProgressView(value: workoutTimer.workoutComplete ? 1.0 : Double(workoutTimer.totalSecondsElapsed) / (Double(workoutTimer.totalSecondsRemaining) + Double(workoutTimer.totalSecondsElapsed)))
+            }
+            .padding()
         }
         .onAppear {
             UIApplication.shared.isIdleTimerDisabled = true

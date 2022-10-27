@@ -8,28 +8,30 @@
 import SwiftUI
 
 struct WorkoutsView: View {
+    @Environment(\.scenePhase) private var scenePhase
     @Binding var workouts: [Workout]
     @State private var isPresentingNewScrumView = false
     @State private var newWorkoutData = Workout.Data()
-    let saveAction: ()->Void
-    @Environment(\.scenePhase) private var scenePhase
+    @State private var searchText = ""
 
-    
+    let saveAction: ()->Void
+
     var body: some View {
         List {
             ForEach($workouts) { $workout in
-                if !workout.deleted {
+                if !workout.deleted && (workout.title.contains(searchText) || searchText == "") {
                     NavigationLink(destination: DetailView(workout: $workout)) {
                         CardView(workout: workout)
                     }
                 }
             }
         }
+        .searchable(text: $searchText)
         .navigationTitle("Workouts")
         .toolbar {
-            Button(action: {
+            Button() {
                 isPresentingNewScrumView = true
-            }) {
+            } label: {
                 Image(systemName: "plus")
             }
             .accessibilityLabel("New Scrum")
@@ -51,6 +53,7 @@ struct WorkoutsView: View {
                                 isPresentingNewScrumView = false
                                 newWorkoutData = Workout.Data()
                             }
+                            .disabled(newWorkoutData.title == "")
                         }
                     }
             }

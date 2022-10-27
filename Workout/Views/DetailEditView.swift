@@ -92,7 +92,8 @@ struct DetailEditView: View {
                     }
                     .disabled(newComboName.isEmpty)
                 }
-            }        }
+            }
+        }
     }
 }
 

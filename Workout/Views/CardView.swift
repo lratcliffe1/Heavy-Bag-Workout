@@ -12,19 +12,28 @@ struct CardView: View {
     
     var body: some View {
         VStack(alignment: .leading) {
-            Text(workout.title)
-                .accessibilityAddTraits(.isHeader)
-                .font(.headline)
+            HStack {
+                Text(workout.title)
+                    .accessibilityAddTraits(.isHeader)
+                    .font(.headline)
+                Spacer()
+                HStack(spacing: 4) {
+                    Image(systemName: "clock")
+                    Text("\((workout.secondsInRound + workout.secondsInRest) * workout.numberOfRounds / 60) min")
+                }
+                .font(.caption)
+                .opacity(0.7)
+            }
             Spacer()
             HStack {
                 Text("\(workout.numberOfRounds) Rounds")
-                    .accessibilityLabel("\(workout.combos.count) attendees")
+                    .accessibilityLabel("Number of rounds \(workout.combos.count)")
                 Spacer()
-                Text("Round: \(workout.secondsInRound)s")
-                    .accessibilityLabel("\(workout.secondsInRound) second rounds")
+                Text("Round: \(workout.secondsInRound) s")
+                    .accessibilityLabel("Round length \(workout.secondsInRound) seconds")
                 Spacer()
-                Text("Rest: \(workout.secondsInRest)s")
-                    .accessibilityLabel("\(workout.secondsInRest) second rest")
+                Text("Rest: \(workout.secondsInRest) s")
+                    .accessibilityLabel("Rest length \(workout.secondsInRest) seconds")
             }
             .font(.caption)
         }
